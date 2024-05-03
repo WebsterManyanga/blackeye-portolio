@@ -1,6 +1,6 @@
 "use client";
 
-import { cinzel } from "./fonts";
+import { cinzel, cinzelDecorative } from "./fonts";
 import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -48,7 +48,7 @@ const Header = () => {
       <h1
         className={`absolute bottom-16 left-4 text-5xl z-10 text-primary select-none   ${cinzel.className}`}
       >
-        BLACKEYE <br/> VISUALS
+        <span className={cinzelDecorative.className}>B</span>LACKEYE <br/> <span className={cinzelDecorative.className}>V</span>ISUALS
       </h1>
       <Socials />
     </section>
