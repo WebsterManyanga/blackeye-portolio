@@ -1,9 +1,20 @@
+'use client';
+
 import Image from "next/image";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
 import { cinzel, cinzelDecorative } from "./fonts";
+import useEmblaCarousel from "embla-carousel-react";
+import { photoAlbum } from "../lib/photoAlbum";
 
 const Latest = () => {
+  const [emblaRef] = useEmblaCarousel();
+  const pictures = photoAlbum.map((picture) => (
+    <div className=" embla__slide">
+      <Image src={picture} alt="photo" width={500} height={500} />
+    </div>
+  ));
+
   return (
     <section className=" pt-10 px-5">
       <h1 className={`${cinzel.className} text-5xl text-primary`}>
@@ -11,8 +22,8 @@ const Latest = () => {
         <span className={cinzelDecorative.className}>L</span>atest{" "}
         <span className={cinzelDecorative.className}>W</span>ork
       </h1>
-      <div className=" mt-10">
-        <Image src="/photoAlbum/A-2.jpg" alt="photo" width={500} height={500} />
+      <div className="embla mt-10" ref={emblaRef}>
+      <div className="embla__container">{pictures} </div>
       </div>
       <p className="text-sm mt-5">
         Introducing our latest masterpiece: a visual tale meticulously crafted

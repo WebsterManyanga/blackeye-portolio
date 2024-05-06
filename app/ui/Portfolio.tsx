@@ -19,7 +19,7 @@ const Portfolio = () => {
   return (
     <section className="pt-10 px-5">
       <h1 className={`${cinzel.className} text-5xl text-primary`}>Portfolio</h1>
-      <div className="embla" ref={emblaRef}>
+      <div className="embla mt-10" ref={emblaRef}>
         <div className="embla__container">{pictures} </div>
       </div>
       <p className="text-sm mt-5">
