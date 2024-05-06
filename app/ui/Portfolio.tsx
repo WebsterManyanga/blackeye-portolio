@@ -1,14 +1,26 @@
+'use client';
+
 import Image from "next/image";
 import { cinzel } from "./fonts";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
+import useEmblaCarousel from "embla-carousel-react";
+import { photoAlbum } from "../lib/photoAlbum";
 
 const Portfolio = () => {
+  const [emblaRef] = useEmblaCarousel();
+
+  const pictures = photoAlbum.map((picture) => (
+    <div className=" embla__slide">
+      <Image src={picture} alt="photo" width={500} height={500} />
+    </div>
+  ));
+
   return (
-    <section className=" pt-10 px-5">
+    <section className="pt-10 px-5">
       <h1 className={`${cinzel.className} text-5xl text-primary`}>Portfolio</h1>
-      <div className=" mt-10">
-        <Image src="/photoAlbum/A-2.jpg" alt="photo" width={500} height={500} />
+      <div className="embla" ref={emblaRef}>
+        <div className="embla__container">{pictures} </div>
       </div>
       <p className="text-sm mt-5">
         "Welcome to BlackEye Visuals, where creativity meets authenticity in
