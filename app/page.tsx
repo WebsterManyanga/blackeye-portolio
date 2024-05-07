@@ -1,6 +1,7 @@
 import Header from "./ui/Header";
 import Latest from "./ui/Latest";
 import Portfolio from "./ui/Portfolio";
+import Prices from "./ui/Prices";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Header />
       <Portfolio />
       <Latest />
+      <Prices />
     </main>
   );
 }
