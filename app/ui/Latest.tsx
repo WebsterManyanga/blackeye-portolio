@@ -34,7 +34,7 @@ const Latest = () => {
         <Image src="/photoAlbum/A-3.jpg" alt="photo" width={500} height={500} />
       </div>
       <Link
-        href="/contact"
+        href="/photoAlbum"
         className="text-primary mt-10 text-2xl block w-full text-center"
       >
         See More <FaArrowRight className=" inline" />{" "}

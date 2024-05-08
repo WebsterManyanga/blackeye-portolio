@@ -11,7 +11,6 @@ export default function Home() {
       <Portfolio />
       <Latest />
       <Prices />
-      <Footer />
     </main>
   );
 }
