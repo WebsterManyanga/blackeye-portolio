@@ -1,3 +1,4 @@
+import Footer from "./ui/Footer";
 import Header from "./ui/Header";
 import Latest from "./ui/Latest";
 import Portfolio from "./ui/Portfolio";
@@ -10,6 +11,7 @@ export default function Home() {
       <Portfolio />
       <Latest />
       <Prices />
+      <Footer />
     </main>
   );
 }
