@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -9,9 +9,17 @@ import { photoAlbum } from "../lib/photoAlbum";
 
 const Latest = () => {
   const [emblaRef] = useEmblaCarousel();
-  const pictures = photoAlbum.map((picture) => (
-    <div className=" embla__slide">
-      <Image src={picture} alt="photo" width={500} height={500} />
+
+  // const pictures = photoAlbum.map((picture) => (
+  //   <div className=" embla__slide">
+  //     <Image src={picture} alt="photo" width={500} height={500} />
+  //   </div>
+  // ));
+
+  const selection = [photoAlbum[56], photoAlbum[55], photoAlbum[57]];
+  const pictures = selection.map((picture) => (
+    <div className="embla__slide">
+      <Image src={picture.image} alt="photo" width={500} height={500} />
     </div>
   ));
 
@@ -23,7 +31,7 @@ const Latest = () => {
         <span className={cinzelDecorative.className}>W</span>ork
       </h1>
       <div className="embla mt-10" ref={emblaRef}>
-      <div className="embla__container">{pictures} </div>
+        <div className="embla__container">{pictures} </div>
       </div>
       <p className="text-sm mt-5">
         Introducing our latest masterpiece: a visual tale meticulously crafted
@@ -31,7 +39,7 @@ const Latest = () => {
         and authenticity reigns supreme
       </p>
       <div className=" mt-10">
-        <Image src="/photoAlbum/A-3.jpg" alt="photo" width={500} height={500} />
+        <Image src={photoAlbum[33].image} alt="photo" width={500} height={500} />
       </div>
       <Link
         href="/photoAlbum"

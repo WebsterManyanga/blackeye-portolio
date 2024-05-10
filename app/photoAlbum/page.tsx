@@ -5,7 +5,7 @@ import { photoAlbum } from "../lib/photoAlbum";
 const page = () => {
   const pictures = photoAlbum.map((picture) => (
     <div>
-      <Image src={picture} alt="photo" width={500} height={500} />
+      <Image className=" shadow-md rounded-md" src={picture.image} alt="photo" width={500} height={500} />
     </div>
   ));
 
@@ -17,7 +17,7 @@ const page = () => {
           <span className={cinzelDecorative.className}>V</span>ISUALS
         </h1>
       </header>
-      <div className="grid grid-cols-2 gap-2 p-1">
+      <div className="grid grid-cols-2  gap-2 p-1">
         {pictures}
       </div>
     </section>

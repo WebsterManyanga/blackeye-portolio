@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import Image from "next/image";
 import { cinzel } from "./fonts";
@@ -10,9 +10,17 @@ import { photoAlbum } from "../lib/photoAlbum";
 const Portfolio = () => {
   const [emblaRef] = useEmblaCarousel();
 
-  const pictures = photoAlbum.map((picture) => (
-    <div className=" embla__slide">
-      <Image src={picture} alt="photo" width={500} height={500} />
+  const selection = [
+    photoAlbum[56],
+    photoAlbum[35],
+    photoAlbum[32],
+    photoAlbum[13],
+    photoAlbum[9],
+    photoAlbum[48],
+  ];
+  const pictures = selection.map((picture) => (
+    <div className="embla__slide">
+      <Image src={picture.image} alt="photo" width={500} height={500} />
     </div>
   ));
 
@@ -32,7 +40,7 @@ const Portfolio = () => {
         your own narrative"
       </p>
       <div className=" mt-10">
-        <Image src="/photoAlbum/A-3.jpg" alt="photo" width={500} height={500} />
+        <Image src={photoAlbum[47].image} alt="photo" width={500} height={500} />
       </div>
       <Link
         href="/photoAlbum"
