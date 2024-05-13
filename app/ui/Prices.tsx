@@ -4,6 +4,8 @@ import Image from "next/image";
 import { FaCameraRetro } from "react-icons/fa";
 
 const Prices = () => {
+  let insta = 'https://ig.me/m/blackeye_visuals_';
+
   return (
     <section className="py-10 px-5">
       <h1 className={`${cinzel.className} text-5xl text-primary`}>PRICES</h1>
@@ -43,12 +45,14 @@ const Prices = () => {
         </div>
       </div>
       <div className=" mt-10"></div>
-      <Link
-        href="/contact"
-        className={` ${cinzel.className} text-primary mt-10 text-2xl block w-full text-center `}
-      >
-        Book Now <FaCameraRetro className="ml-2 inline-block" />
-      </Link>
+      <div className="w-full">
+        <a
+          href={insta}
+          className={` ${cinzel.className} text-primary mx-auto mt-10 text-2xl block w-fit py-2 px-5 text-center border border-primary rounded-md`}
+        >
+          Book Now <FaCameraRetro className="ml-2 inline-block" />
+        </a>
+      </div>
     </section>
   );
 };
