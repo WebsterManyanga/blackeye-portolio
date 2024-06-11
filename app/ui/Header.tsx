@@ -32,7 +32,7 @@ const Header = () => {
       >
         {pictures.map((picture, i) => (
           <SwiperSlide key={i}>
-            <div className=" w-screen h-[90vh] after:bg-black after:block after:absolute after:h-full after:w-full after:opacity-40  ">
+            <div className=" w-screen h-[100vh] after:bg-black after:block after:absolute after:h-full after:w-full after:opacity-40  ">
               <Image
                 src={picture}
                 alt="photo"
