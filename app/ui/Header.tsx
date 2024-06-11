@@ -30,8 +30,8 @@ const Header = () => {
         modules={[EffectCube, Pagination]}
         className="mySwiper"
       >
-        {pictures.map((picture) => (
-          <SwiperSlide>
+        {pictures.map((picture, i) => (
+          <SwiperSlide key={i}>
             <div className=" w-screen h-[90vh] after:bg-black after:block after:absolute after:h-full after:w-full after:opacity-40  ">
               <Image
                 src={picture}

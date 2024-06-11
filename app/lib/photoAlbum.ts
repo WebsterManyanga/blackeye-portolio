@@ -1,6 +1,6 @@
 export const photoAlbum = [
   {
-    image: "/photoAlbum/A.jpg",
+    image: "/photoAlbum/A-1.jpg",
     model: "ABE & SELAM",
   },
   {
