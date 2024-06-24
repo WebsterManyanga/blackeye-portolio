@@ -17,8 +17,8 @@ const Latest = () => {
   // ));
 
   const selection = [photoAlbum[56], photoAlbum[55], photoAlbum[57]];
-  const pictures = selection.map((picture) => (
-    <div className="embla__slide">
+  const pictures = selection.map((picture, i) => (
+    <div className="embla__slide" key={i}>
       <Image src={picture.image} alt="photo" width={500} height={500} />
     </div>
   ));
@@ -38,7 +38,7 @@ const Latest = () => {
         by BlackEye Visuals. Dive into a world where creativity knows no bounds
         and authenticity reigns supreme
       </p>
-      <div className=" mt-10">
+      <div className=" mt-10 relative">
         <Image src={photoAlbum[33].image} alt="photo" width={500} height={500} />
       </div>
       <Link

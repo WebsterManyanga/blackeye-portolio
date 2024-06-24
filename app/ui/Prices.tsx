@@ -7,9 +7,9 @@ const Prices = () => {
   let insta = 'https://ig.me/m/blackeye_visuals_';
 
   return (
-    <section className="py-10 px-5">
+    <section className="py-10 px-5" id="price">
       <h1 className={`${cinzel.className} text-5xl text-primary`}>PRICES</h1>
-      <div className="embla mt-10">
+      <div className="embla mt-10 relative">
         <Image src="/photoAlbum/A-1.jpg" alt="photo" width={500} height={500} />
       </div>
       <div className="mt-5 flex flex-col gap-5">
