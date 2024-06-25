@@ -10,12 +10,6 @@ import { photoAlbum } from "../lib/photoAlbum";
 const Latest = () => {
   const [emblaRef] = useEmblaCarousel();
 
-  // const pictures = photoAlbum.map((picture) => (
-  //   <div className=" embla__slide">
-  //     <Image src={picture} alt="photo" width={500} height={500} />
-  //   </div>
-  // ));
-
   const selection = [photoAlbum[56], photoAlbum[55], photoAlbum[57]];
   const pictures = selection.map((picture, i) => (
     <div className="embla__slide" key={i}>
@@ -30,16 +24,21 @@ const Latest = () => {
         <span className={cinzelDecorative.className}>L</span>atest{" "}
         <span className={cinzelDecorative.className}>W</span>ork
       </h1>
-      <div className="embla mt-10" ref={emblaRef}>
+      <div className="md:grid grid-rows-1 grid-cols-2">
+      <div className="embla mt-10 md:w-[80%]" ref={emblaRef}>
         <div className="embla__container">{pictures} </div>
       </div>
-      <p className="text-sm mt-5">
+      <div>
+      <p className="text-sm mt-5 md:mt-10 font-thin">
         Introducing our latest masterpiece: a visual tale meticulously crafted
         by BlackEye Visuals. Dive into a world where creativity knows no bounds
         and authenticity reigns supreme
       </p>
-      <div className=" mt-10 relative">
+      <div className=" mt-10 relative md:w-[80%]">
         <Image src={photoAlbum[33].image} alt="photo" width={500} height={500} />
+      </div>
+
+      </div>
       </div>
       <Link
         href="/photoAlbum"
