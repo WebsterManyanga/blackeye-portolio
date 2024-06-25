@@ -18,7 +18,7 @@ const Header = () => {
     pictures.push(`/photoAlbum/A-${i}.jpg`);
   }
   return (
-    <section className="relative">
+    <section className="relative ">
       <TopNav />
       <Swiper
         effect={"cube"}
@@ -34,7 +34,7 @@ const Header = () => {
       >
         {pictures.map((picture, i) => (
           <SwiperSlide key={i}>
-            <div className=" w-screen h-[100vh] after:bg-black after:block after:absolute after:h-full after:w-full after:opacity-40  ">
+            <div className="  h-[100vh] after:bg-black after:block after:absolute after:h-full after:w-full after:opacity-40  ">
               <Image
                 src={picture}
                 alt="photo"

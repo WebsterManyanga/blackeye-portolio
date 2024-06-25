@@ -9,14 +9,15 @@ const Prices = () => {
   return (
     <section className="py-10 px-5" id="price">
       <h1 className={`${cinzel.className} text-5xl text-primary`}>PRICES</h1>
+      <div className="md:flex gap-4 ">
       <div className="embla mt-10 relative">
         <Image src="/photoAlbum/A-1.jpg" alt="photo" width={500} height={500} />
       </div>
-      <div className="mt-5 flex flex-col gap-5">
+      <div className="mt-10 flex flex-col gap-5">
         <div>
           <div className="flex justify-between text-2xl mb-3">
             <h2 className=" border-b-4 border-b-primary pr-3">Portrait</h2>
-            <p>$250</p>
+            <p>300zł</p>
           </div>
           <p>
             This includes individual, family, and group portraits, as well as
@@ -26,7 +27,7 @@ const Prices = () => {
         <div>
           <div className="flex justify-between text-2xl mb-3">
             <h2 className=" border-b-4 border-b-primary pr-3">Events</h2>
-            <p>$500</p>
+            <p>500zł</p>
           </div>
           <p>
             This includes weddings, birthdays, anniversaries, and other
@@ -36,7 +37,7 @@ const Prices = () => {
         <div>
           <div className="flex justify-between text-2xl mb-3">
             <h2 className=" border-b-4 border-b-primary pr-3">Commercial</h2>
-            <p>$800</p>
+            <p>800zł</p>
           </div>
           <p>
             This includes product photography, real estate photography, and
@@ -45,6 +46,7 @@ const Prices = () => {
         </div>
       </div>
       <div className=" mt-10"></div>
+      </div>
       <div className="w-full">
         <a
           href={insta}

@@ -25,7 +25,7 @@ const Latest = () => {
         <span className={cinzelDecorative.className}>W</span>ork
       </h1>
       <div className="md:grid grid-rows-1 grid-cols-2">
-      <div className="embla mt-10 md:w-[80%]" ref={emblaRef}>
+      <div className="embla mt-10 md:w-[80%] justify-self-center" ref={emblaRef}>
         <div className="embla__container">{pictures} </div>
       </div>
       <div>
