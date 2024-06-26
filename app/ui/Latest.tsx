@@ -13,7 +13,7 @@ const Latest = () => {
   const selection = [photoAlbum[56], photoAlbum[55], photoAlbum[57]];
   const pictures = selection.map((picture, i) => (
     <div className="embla__slide" key={i}>
-      <Image src={picture.image} alt="photo" width={500} height={500} />
+      <Image src={picture.image} alt="photo" width={2892} height={3615} />
     </div>
   ));
 
@@ -24,8 +24,8 @@ const Latest = () => {
         <span className={cinzelDecorative.className}>L</span>atest{" "}
         <span className={cinzelDecorative.className}>W</span>ork
       </h1>
-      <div className="md:grid grid-rows-1 grid-cols-2">
-      <div className="embla mt-10 md:w-[80%] justify-self-center" ref={emblaRef}>
+      <div className="md:grid grid-rows-1 grid-cols-2 ">
+      <div className="embla mt-10 md:w-[80%] justify-self-center lg:w-[65%]" ref={emblaRef}>
         <div className="embla__container">{pictures} </div>
       </div>
       <div>
@@ -34,8 +34,8 @@ const Latest = () => {
         by BlackEye Visuals. Dive into a world where creativity knows no bounds
         and authenticity reigns supreme
       </p>
-      <div className=" mt-10 relative md:w-[80%]">
-        <Image src={photoAlbum[33].image} alt="photo" width={500} height={500} />
+      <div className=" mt-10 relative md:w-[80%] lg:w-[60%]">
+        <Image src={photoAlbum[33].image} alt="photo" width={4000} height={5000} />
       </div>
 
       </div>

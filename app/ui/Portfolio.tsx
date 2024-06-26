@@ -20,15 +20,15 @@ const Portfolio = () => {
   ];
   const pictures = selection.map((picture, i) => (
     <div className="embla__slide" key={i}>
-      <Image src={picture.image} alt="photo" width={500} height={500} />
+      <Image src={picture.image} alt="photo" width={4000} height={5000} />
     </div>
   ));
 
   return (
     <section className="pt-10 px-5" id="portfolio">
       <h1 className={`${cinzel.className} text-5xl text-primary`}>Portfolio</h1>
-      <div className=" md:grid grid-rows-1 grid-cols-2" >
-      <div className="embla mt-10 md:w-[80%] justify-self-center" ref={emblaRef}>
+      <div className=" md:grid grid-rows-1 grid-cols-2 " >
+      <div className="embla mt-10 md:w-[80%] lg:w-[65%] justify-self-center" ref={emblaRef}>
         <div className="embla__container">{pictures} </div>
       </div>
       <div>
@@ -41,8 +41,8 @@ const Portfolio = () => {
         journey of visual storytelling, where every shot is a masterpiece of
         your own narrative"
       </p>
-      <div className=" mt-10 relative md:w-[80%]">
-        <Image src={photoAlbum[47].image} alt="photo" width={500} height={500} />
+      <div className=" mt-10 relative md:w-[80%] lg:w-[60%]">
+        <Image src={photoAlbum[47].image} alt="photo" width={4000} height={5000} />
       </div>
       </div>
       </div>
@@ -50,7 +50,7 @@ const Portfolio = () => {
         href="/photoAlbum"
         className="text-primary mt-10 text-2xl block w-full text-center"
       >
-        See More <FaArrowRight className=" inline" />{" "}
+        See More <FaArrowRight className="inline" />{" "}
       </Link>
     </section>
   );
