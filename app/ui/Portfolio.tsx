@@ -33,13 +33,13 @@ const Portfolio = () => {
       </div>
       <div>
       <p className="text-sm mt-5 md:mt-10 font-thin">
-        "Welcome to BlackEye Visuals, where creativity meets authenticity in
+      &quot;Welcome to BlackEye Visuals, where creativity meets authenticity in
         every frame. We are passionate about capturing moments that tell your
         unique story through the lens of our creative vision. Explore our
         portfolio and let our images speak to the genuine emotions, vivid
         colors, and captivating compositions that define our work. Join us on a
         journey of visual storytelling, where every shot is a masterpiece of
-        your own narrative"
+        your own narrative&quot;
       </p>
       <div className=" mt-10 relative md:w-[80%] lg:w-[60%]">
         <Image src={photoAlbum[47].image} alt="photo" width={4000} height={5000} />

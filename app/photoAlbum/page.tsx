@@ -3,8 +3,8 @@ import { cinzel, cinzelDecorative } from "../ui/fonts";
 import { photoAlbum } from "../lib/photoAlbum";
 
 const page = () => {
-  const pictures = photoAlbum.map((picture) => (
-    <div className="relative">
+  const pictures = photoAlbum.map((picture, index) => (
+    <div className="relative" key={index}>
       <Image className=" shadow-md rounded-md" src={picture.image} alt="photo" width={500} height={500} />
     </div>
   ));
