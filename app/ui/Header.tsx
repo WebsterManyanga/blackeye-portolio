@@ -6,7 +6,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-cube";
 import "swiper/css/pagination";
-import { EffectCube, Pagination } from "swiper/modules";
+import { Autoplay, EffectCube, EffectFade, Pagination } from "swiper/modules";
 import Image from "next/image";
 import Socials from "./Socials";
 import TopNav from "./TopNav";
@@ -21,15 +21,14 @@ const Header = () => {
     <section className="relative ">
       <TopNav />
       <Swiper
-        effect={"cube"}
+        navigation={true}
         grabCursor={true}
-        cubeEffect={{
-          shadow: true,
-          slideShadows: true,
-          shadowOffset: 20,
-          shadowScale: 0.94,
+        loop={true}
+        autoplay={{
+          delay: 5000,
+          disableOnInteraction: false,
         }}
-        modules={[EffectCube, Pagination]}
+        modules={[Autoplay, EffectFade, Pagination]}
         className="mySwiper"
       >
         {pictures.map((picture, i) => (
