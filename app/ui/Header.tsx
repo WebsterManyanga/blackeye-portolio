@@ -45,7 +45,7 @@ const Header = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-      <div className="bottom-16 left-4 absolute z-10 md:left-10">
+      <div className="bottom-28 md:bottom-16 left-4 absolute z-10 md:left-10">
       <h1
         className={` text-5xl md:text-7xl text-primary select-none   ${cinzel.className}`}
       >
