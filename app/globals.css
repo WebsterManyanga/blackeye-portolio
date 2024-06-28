@@ -32,13 +32,11 @@ body {
   }
 }
 
-.embla {
-  overflow: hidden;
+
+.swiper-button-next::after {
+  color: white;
 }
-.embla__container {
-  display: flex;
-}
-.embla__slide {
-  flex: 0 0 100%;
-  min-width: 0;
+
+.swiper-button-prev::after {
+  color: white;
 }

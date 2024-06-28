@@ -21,7 +21,6 @@ const Header = () => {
     <section className="relative ">
       <TopNav />
       <Swiper
-        navigation={true}
         grabCursor={true}
         loop={true}
         autoplay={{

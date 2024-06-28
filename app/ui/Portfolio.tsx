@@ -6,6 +6,12 @@ import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
 import useEmblaCarousel from "embla-carousel-react";
 import { photoAlbum } from "../lib/photoAlbum";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
+
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 
 const Portfolio = () => {
   const [emblaRef] = useEmblaCarousel();
@@ -19,17 +25,20 @@ const Portfolio = () => {
     photoAlbum[48],
   ];
   const pictures = selection.map((picture, i) => (
-    <div className="embla__slide" key={i}>
+    <SwiperSlide key={i}>
       <Image src={picture.image} alt="photo" width={4000} height={5000} />
-    </div>
+  </SwiperSlide>
   ));
+
 
   return (
     <section className="pt-10 px-5" id="portfolio">
       <h1 className={`${cinzel.className} text-5xl text-primary`}>Portfolio</h1>
       <div className=" md:grid grid-rows-1 grid-cols-2 " >
       <div className="embla mt-10 md:w-[80%] lg:w-[65%] justify-self-center" ref={emblaRef}>
-        <div className="embla__container">{pictures} </div>
+      <Swiper navigation={true} loop={true} modules={[Navigation]} className="mySwiper">
+        {pictures}
+       </Swiper>
       </div>
       <div>
       <p className="text-sm mt-5 md:mt-10 font-thin">
