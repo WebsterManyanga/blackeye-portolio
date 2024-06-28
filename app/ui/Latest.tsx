@@ -6,15 +6,17 @@ import { FaArrowRight } from "react-icons/fa";
 import { cinzel, cinzelDecorative } from "./fonts";
 import useEmblaCarousel from "embla-carousel-react";
 import { photoAlbum } from "../lib/photoAlbum";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
 
 const Latest = () => {
   const [emblaRef] = useEmblaCarousel();
 
   const selection = [photoAlbum[56], photoAlbum[55], photoAlbum[57]];
   const pictures = selection.map((picture, i) => (
-    <div className="embla__slide" key={i}>
+    <SwiperSlide key={i}>
       <Image src={picture.image} alt="photo" width={2892} height={3615} />
-    </div>
+    </SwiperSlide>
   ));
 
   return (
@@ -25,8 +27,10 @@ const Latest = () => {
         <span className={cinzelDecorative.className}>W</span>ork
       </h1>
       <div className="md:grid grid-rows-1 grid-cols-2 ">
-      <div className="embla mt-10 md:w-[80%] justify-self-center lg:w-[65%]" ref={emblaRef}>
-        <div className="embla__container">{pictures} </div>
+      <div className="mt-10 md:w-[80%] justify-self-center lg:w-[65%]">
+        <Swiper navigation={true} loop={true} modules={[Navigation]} className="mySwiper">
+          {pictures}
+        </Swiper>
       </div>
       <div>
       <p className="text-sm mt-5 md:mt-10 font-thin">

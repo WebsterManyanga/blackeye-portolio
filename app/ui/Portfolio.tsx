@@ -35,7 +35,7 @@ const Portfolio = () => {
     <section className="pt-10 px-5" id="portfolio">
       <h1 className={`${cinzel.className} text-5xl text-primary`}>Portfolio</h1>
       <div className=" md:grid grid-rows-1 grid-cols-2 " >
-      <div className="embla mt-10 md:w-[80%] lg:w-[65%] justify-self-center" ref={emblaRef}>
+      <div className="mt-10 md:w-[80%] lg:w-[65%] justify-self-center">
       <Swiper navigation={true} loop={true} modules={[Navigation]} className="mySwiper">
         {pictures}
        </Swiper>
