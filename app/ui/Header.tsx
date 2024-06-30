@@ -1,4 +1,3 @@
-"use client";
 
 import { cinzel, cinzelDecorative } from "./fonts";
 import React, { useRef, useState } from "react";
@@ -6,17 +5,21 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-cube";
 import "swiper/css/pagination";
-import { Autoplay, EffectCube, EffectFade, Pagination } from "swiper/modules";
+import { Autoplay, EffectFade, Pagination } from "swiper/modules";
 import Image from "next/image";
 import Socials from "./Socials";
 import TopNav from "./TopNav";
 
-const Header = () => {
+const Header = ({screenWidth}: propType) => {
   const pictures = ["/photoAlbum/A-31.jpg"];
 
-  for (let i = 2; i < 59; i++) {
-    pictures.push(`/photoAlbum/A-${i}.jpg`);
+
+  if (screenWidth < 768) {
+    pictures.push("/photoAlbum/A-31.jpg", "/photoAlbum/A-2.jpg", "/photoAlbum/A-45.jpg");
+  } else {
+    pictures.push("/photoAlbum/A-43.jpg", "/photoAlbum/A-42.jpg", "/photoAlbum/A-46.jpg");
   }
+  
   return (
     <section className="relative ">
       <TopNav />
@@ -58,5 +61,9 @@ const Header = () => {
     </section>
   );
 };
+
+interface propType {
+  screenWidth: number;
+}
 
 export default Header;
