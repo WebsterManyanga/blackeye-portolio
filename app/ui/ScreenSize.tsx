@@ -4,9 +4,10 @@ import { useEffect, useState } from "react";
 import Header from "./Header";
 
 export default function ScreenSize() {
-    const [screenWidth, setScreenWidth] = useState(window.screen.width);
+    const [screenWidth, setScreenWidth] = useState(0);
 
     useEffect(() => {
+
         const handleResize = () => {
             setScreenWidth(window.innerWidth);
         }
