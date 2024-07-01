@@ -7,7 +7,6 @@ export default function ScreenSize() {
     const [screenWidth, setScreenWidth] = useState(0);
 
     useEffect(() => {
-
         const handleResize = () => {
             setScreenWidth(window.innerWidth);
         }
@@ -17,7 +16,10 @@ export default function ScreenSize() {
         }
     });
 
-    
+    useEffect(() => {
+        setScreenWidth(window.innerWidth);
+    },[]);
+
 
     return (
         <Header screenWidth={screenWidth} />
