@@ -10,122 +10,17 @@ import Socials from "./Socials";
 import TopNav from "./TopNav";
 
 const Header = ({ screenWidth }: propType) => {
+  const mobilePictures = [2,9,10,13,15,21,31,32,33,36,40,45,49,57,58,59,60,61,62,63,66,67,69,71,81,85,87,88,89,93,96];
+  const desktopPictures = [5,6,9,12,14,15,16,18,19,21,31,33,35,38,39,42,43,45,46,50,57,58,59,60,61,62,63,63,66,67,69,71,81,85,87,88,89,93,96];
   const pictures = [];
-
-  // if (screenWidth < 768) {
-  //   pictures.push(
-  //     "/photoAlbum/A-2.jpg",
-  //     "/photoAlbum/A-9.jpg",
-  //     "/photoAlbum/A-10.jpg",
-  //     "/photoAlbum/A-12.jpg",
-
-  //     "/photoAlbum/A-15.jpg",
-
-  //     "/photoAlbum/A-16.jpg",
-  //     "/photoAlbum/A-20.jpg",
-
-  //     "/photoAlbum/A-31.jpg",
-  //     "/photoAlbum/A-33.jpg",
-  //     "/photoAlbum/A-40.jpg",
-
-
-  //     "/photoAlbum/A-45.jpg",
-  //     "/photoAlbum/A-47.jpg",
-  //     "/photoAlbum/A-53.jpg",
-
-
-  //     "/photoAlbum/A-57.jpg",
-  //     "/photoAlbum/A-58.jpg",
-  //     "/photoAlbum/A-59.jpg",
-
-
-  //     "/photoAlbum/A-60.jpg",
-  //     "/photoAlbum/A-64.jpg",
-  //     "/photoAlbum/A-65.jpg",
-
-
-  //     "/photoAlbum/A-66.jpg",
-  //     "/photoAlbum/A-67.jpg",
-  //     "/photoAlbum/A-68.jpg",
-
-
-  //     "/photoAlbum/A-69.jpg",
-  //     "/photoAlbum/A-70.jpg",
-  //     "/photoAlbum/A-71.jpg",
-
-
-  //     "/photoAlbum/A-72.jpg",
-  //     "/photoAlbum/A-73.jpg",
-  //     "/photoAlbum/A-75.jpg",
-
-
-  //     "/photoAlbum/A-76.jpg",
-  //     "/photoAlbum/A-77.jpg",
-  //     "/photoAlbum/A-78.jpg",
-
-  //     "/photoAlbum/A-79.jpg",
-  //     "/photoAlbum/A-80.jpg",
-  //     "/photoAlbum/A-81.jpg",
-
-
-  //     "/photoAlbum/A-82.jpg",
-  //     "/photoAlbum/A-83.jpg",
-  //     "/photoAlbum/A-84.jpg",
-
-
-  //     "/photoAlbum/A-85.jpg",
-  //     "/photoAlbum/A-86.jpg",
-  //     "/photoAlbum/A-87.jpg",
-
-
-  //     "/photoAlbum/A-88.jpg",
-  //     "/photoAlbum/A-89.jpg",
-  //     "/photoAlbum/A-90.jpg",
-
-
-
-  //     "/photoAlbum/A-91.jpg",
-  //     "/photoAlbum/A-92.jpg",
-  //     "/photoAlbum/A-93.jpg",
-
-
-  //     "/photoAlbum/A-94.jpg",
-  //     "/photoAlbum/A-95.jpg",
-  //     "/photoAlbum/A-96.jpg",
-
-
-  //     "/photoAlbum/A-97.jpg",
-  //     "/photoAlbum/A-98.jpg",
-  //     "/photoAlbum/A-99.jpg",
-
-
-  //     "/photoAlbum/A-100.jpg",
-  //     "/photoAlbum/A-101.jpg",
-  //     "/photoAlbum/A-102.jpg",
-  //   );
-  // } else {
-  //   pictures.push(
-  //     "/photoAlbum/A-5.jpg",
-
-  //     "/photoAlbum/A-14.jpg",
-  //     "/photoAlbum/A-17.jpg",
-  //     "/photoAlbum/A-18.jpg",
-
-
-  //     "/photoAlbum/A-19.jpg",
-  //     "/photoAlbum/A-21.jpg",
-  //     "/photoAlbum/A-31(2).jpg",
-
-
-  //     "/photoAlbum/A-35.jpg",
-  //     "/photoAlbum/A-39.jpg",
-  //     "/photoAlbum/A-10.jpg",
-
-  //   );
-  // }
-
-  for (let i = 1; i < 102; i++) {
-    pictures.push(`/photoAlbum/A-${i}.jpg`);
+  if (screenWidth < 768) {
+    for (let i = 0; i < mobilePictures.length; i++) {
+      pictures.push(`/photoAlbum/A-${mobilePictures[i]}.jpg`);
+    }
+  } else{
+    for (let i = 0; i < desktopPictures.length; i++) {
+      pictures.push(`/photoAlbum/A-${desktopPictures[i]}.jpg`);
+    }
   }
 
   return (
