@@ -10,8 +10,8 @@ import Socials from "./Socials";
 import TopNav from "./TopNav";
 
 const Header = ({ screenWidth }: propType) => {
-  const mobilePictures = [2,9,10,13,15,21,31,32,33,36,40,45,49,57,58,59,60,61,62,63,66,67,69,71,81,85,87,88,89,93,96];
-  const desktopPictures = [5,6,9,12,14,15,16,18,19,21,31,33,35,38,39,42,43,45,46,50,57,58,59,60,61,62,63,63,66,67,69,71,81,85,87,88,89,93,96];
+  const mobilePictures = [31,21,45,57,58,62];
+  const desktopPictures = [31,21,45,46,58,62];
   const pictures = [];
   if (screenWidth < 768) {
     for (let i = 0; i < mobilePictures.length; i++) {
@@ -38,7 +38,7 @@ const Header = ({ screenWidth }: propType) => {
       >
         {pictures.map((picture, i) => (
           <SwiperSlide key={i}>
-            <div className="  h-[100vh] after:bg-black after:block after:absolute after:h-full after:w-full after:opacity-40  ">
+            <div className="h-[100vh] after:bg-black after:block after:absolute after:h-full after:w-full after:opacity-40  ">
               <Image
                 src={picture}
                 alt="photo"
