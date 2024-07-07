@@ -5,18 +5,18 @@ import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
 import { cinzel, cinzelDecorative } from "./fonts";
 import useEmblaCarousel from "embla-carousel-react";
-import { photoAlbum } from "../lib/photoAlbum";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 
 const Latest = () => {
   const [emblaRef] = useEmblaCarousel();
 
-  const selection = [photoAlbum[56], photoAlbum[55], photoAlbum[57]];
+  const selection = [
+    104,66,77,57]
   const pictures = selection.map((picture, i) => (
     <SwiperSlide key={i}>
-      <Image src={picture.image} alt="photo" width={2892} height={3615} />
-    </SwiperSlide>
+      <Image src={`/photoAlbum/A-${picture}.jpg`} alt="photo" width={4000} height={5000} />
+  </SwiperSlide>
   ));
 
   return (
@@ -39,7 +39,7 @@ const Latest = () => {
         and authenticity reigns supreme
       </p>
       <div className=" mt-10 relative md:w-[80%] lg:w-[60%]">
-        <Image src={photoAlbum[33].image} alt="photo" width={4000} height={5000} />
+        <Image src={'/photoAlbum/A-58.jpg'} alt="photo" width={4000} height={5000} />
       </div>
 
       </div>

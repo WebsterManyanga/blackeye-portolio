@@ -11,7 +11,7 @@ const Prices = () => {
       <h1 className={`${cinzel.className} text-5xl text-primary`}>PRICES</h1>
       <div className="md:flex gap-4 ">
       <div className="embla mt-10 relative">
-        <Image src="/photoAlbum/A-1.jpg" alt="photo" width={500} height={500} />
+        <Image src="/photoAlbum/A-2.jpg" alt="photo" width={4000} height={5000} />
       </div>
       <div className="mt-10 flex flex-col gap-5">
         <div>
