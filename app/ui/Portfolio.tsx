@@ -17,7 +17,7 @@ const Portfolio = () => {
   const [emblaRef] = useEmblaCarousel();
 
   const selection = [
-    59,58, 53,55,]
+    59,58, 41,33,]
   const pictures = selection.map((picture, i) => (
     <SwiperSlide key={i}>
       <Image src={`/photoAlbum/A-${picture}.jpg`} alt="photo" width={4000} height={5000} />
