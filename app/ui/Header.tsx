@@ -10,8 +10,8 @@ import Socials from "./Socials";
 import TopNav from "./TopNav";
 
 const Header = ({ screenWidth }: propType) => {
-  const mobilePictures = [31,103,45,58,62];
-  const desktopPictures = [31,21,45,46,58,62];
+  const mobilePictures = [31,103,45,62];
+  const desktopPictures = [31,21,45,46,62];
   const pictures = [];
   if (screenWidth < 768) {
     for (let i = 0; i < mobilePictures.length; i++) {

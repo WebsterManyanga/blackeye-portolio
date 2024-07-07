@@ -14,10 +14,9 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 const Portfolio = () => {
-  const [emblaRef] = useEmblaCarousel();
 
   const selection = [
-    59,58, 41,33,]
+    59, 41,15,49]
   const pictures = selection.map((picture, i) => (
     <SwiperSlide key={i}>
       <Image src={`/photoAlbum/A-${picture}.jpg`} alt="photo" width={4000} height={5000} />
