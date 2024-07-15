@@ -10,7 +10,7 @@ const Prices = () => {
     <section className="py-10 px-5" id="price">
       <h1 className={`${cinzel.className} text-5xl text-primary`}>PRICES</h1>
       <div className="md:flex gap-4 ">
-      <div className="embla mt-10 relative">
+      <div className=" mt-10 relative md:w-[50%] lg:w-[30%]">
         <Image src="/photoAlbum/A-2.jpg" alt="photo" width={4000} height={5000} />
       </div>
       <div className="mt-10 flex flex-col gap-5">
