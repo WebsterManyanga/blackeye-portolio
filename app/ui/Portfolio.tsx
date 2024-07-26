@@ -44,10 +44,7 @@ const Portfolio = () => {
         your own narrative&quot;
       </p>
       <div className=" mt-10 relative md:w-[80%] lg:w-[60%]">
-        {/* <Image src={photoAlbum[47].image} alt="photo" width={4000} height={5000} /> */}
-        <video className="w-full md:w-[70%]" autoPlay loop muted>
-          <source src="/videos/fortBema.mov" type="video/mp4" />
-        </video>
+        <Image src={photoAlbum[47].image} alt="photo" width={4000} height={5000} />
       </div>
       </div>
       </div>
