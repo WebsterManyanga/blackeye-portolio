@@ -7,11 +7,11 @@ import ScreenSize from "./ui/ScreenSize";
 
 export default function Home() {
   return (
-    <main>
+    <>
       <ScreenSize />
       <Portfolio />
       <Latest />
       <Prices />
-    </main>
+    </>
   );
 }
