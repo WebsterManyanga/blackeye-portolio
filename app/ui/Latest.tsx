@@ -20,7 +20,7 @@ const Latest = () => {
   ));
 
   return (
-    <section className=" pt-10 px-5 md:snap-start">
+    <section className=" pt-10 px-5 snap-start">
       <h1 className={`${cinzel.className} text-5xl text-primary`}>
         <span className={cinzelDecorative.className}>O</span>ur{" "}
         <span className={cinzelDecorative.className}>L</span>atest{" "}
@@ -38,7 +38,7 @@ const Latest = () => {
         by BlackEye Visuals. Dive into a world where creativity knows no bounds
         and authenticity reigns supreme
       </p>
-      <div className=" mt-10 relative md:w-[80%] lg:w-[60%]">
+      <div className=" mt-10 relative md:w-[80%] lg:w-[60%] snap-start md:snap-align-none">
         <Image src={'/photoAlbum/A-58.jpg'} alt="photo" width={4000} height={5000} />
       </div>
 

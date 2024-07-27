@@ -43,7 +43,7 @@ const Portfolio = () => {
         journey of visual storytelling, where every shot is a masterpiece of
         your own narrative&quot;
       </p>
-      <div className=" mt-10 relative md:w-[80%] lg:w-[60%]">
+      <div className=" mt-10 relative md:w-[80%] lg:w-[60%] snap-start md:snap-align-none">
         <Image src={photoAlbum[47].image} alt="photo" width={4000} height={5000} />
       </div>
       </div>

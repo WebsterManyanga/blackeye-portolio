@@ -19,7 +19,6 @@ export default function RootLayout({
     <html lang="en" className="snap-mandatory snap-y snap-always">
       <body className={`${inter.className} `} >
         {children}
-        <Footer />
       </body>
     </html>
   );
