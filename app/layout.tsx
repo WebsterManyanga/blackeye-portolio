@@ -16,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="snap-mandatory snap-y snap-always">
+    <html lang="en">
       <body className={`${inter.className} `} >
         {children}
       </body>

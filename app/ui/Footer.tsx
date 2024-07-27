@@ -2,7 +2,7 @@ import { cinzel, cinzelDecorative } from "./fonts";
 
 const Footer = () => {
   return (
-    <section className="mt-4 snap-start">
+    <section className="mt-4">
       <div className={`${cinzel.className} flex flex-col justify-center text-center gap-2 mb-10`}>
         <h1 className="text-xl">PHOTOGRAPHER</h1>
         <h1

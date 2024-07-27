@@ -24,7 +24,7 @@ const Header = ({ screenWidth }: propType) => {
   }
 
   return (
-    <section className="relative snap-start ">
+    <section className="relative">
       <TopNav />
       <Swiper
         grabCursor={true}

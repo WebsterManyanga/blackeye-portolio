@@ -25,7 +25,7 @@ const Portfolio = () => {
 
 
   return (
-    <section className="pt-10 px-5 snap-start " id="portfolio">
+    <section className="pt-10 px-5 " id="portfolio">
       <h1 className={`${cinzel.className} text-5xl text-primary`}>Portfolio</h1>
       <div className=" md:grid grid-rows-1 grid-cols-2 " >
       <div className="mt-10 md:w-[80%] lg:w-[65%] justify-self-center">
