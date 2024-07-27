@@ -20,7 +20,7 @@ const Latest = () => {
   ));
 
   return (
-    <section className=" pt-10 px-5 snap-start">
+    <section className=" pt-10 px-5 md:snap-start">
       <h1 className={`${cinzel.className} text-5xl text-primary`}>
         <span className={cinzelDecorative.className}>O</span>ur{" "}
         <span className={cinzelDecorative.className}>L</span>atest{" "}
