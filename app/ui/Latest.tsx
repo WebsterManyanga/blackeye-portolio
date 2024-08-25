@@ -12,7 +12,7 @@ const Latest = () => {
   const [emblaRef] = useEmblaCarousel();
 
   const selection = [
-    104,66,77,57]
+    151,104,150,127]
   const pictures = selection.map((picture, i) => (
     <SwiperSlide key={i}>
       <Image src={`/photoAlbum/A-${picture}.jpg`} alt="photo" width={4000} height={5000} />

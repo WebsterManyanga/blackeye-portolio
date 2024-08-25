@@ -7,7 +7,7 @@ export default function TopNav() {
         <nav className="flex justify-between items-center p-4">
             <div className="flex items-center space-x-4">
               <div>
-                <Image src="/logo.jpg" alt="logo" width={50} height={50} />
+                <Image src="/logo.jpg" alt="logo" className='rounded-md' width={100} height={100} />
               </div>            </div>
             <div className="flex items-center space-x-10">
             <a href="#portfolio" className="text-lg text-primary">Portfolio</a>
