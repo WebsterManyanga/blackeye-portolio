@@ -16,30 +16,30 @@ const Prices = () => {
       <div className="mt-10 flex flex-col gap-5">
         <div>
           <div className="flex justify-between text-2xl mb-3">
-            <h2 className=" border-b-4 border-b-primary pr-3">Portrait</h2>
-            <p>300zł</p>
+            <h2 className={` ${cinzel.className} text-primary border-b-2 border-b-primary pr-3`}>Portrait</h2>
+            <p className={` ${cinzel.className} font-light text-primary`}>400zł/hr</p>
           </div>
-          <p>
+          <p className=" font-light italic text-gray-100">
             This includes individual, family, and group portraits, as well as
             headshots for business and corporate purposes.
           </p>
         </div>
         <div>
           <div className="flex justify-between text-2xl mb-3">
-            <h2 className=" border-b-4 border-b-primary pr-3">Events</h2>
-            <p>500zł</p>
+            <h2 className={` ${cinzel.className} text-primary border-b-2 border-b-primary pr-3`}>Events</h2>
+            <p className={` ${cinzel.className} font-light text-primary`}>300zł - 500zł/hr</p>
           </div>
-          <p>
+          <p className=" font-light italic text-gray-100">
             This includes weddings, birthdays, anniversaries, and other
             celebrations.
           </p>
         </div>
         <div>
           <div className="flex justify-between text-2xl mb-3">
-            <h2 className=" border-b-4 border-b-primary pr-3">Commercial</h2>
-            <p>800zł</p>
+            <h2 className={` ${cinzel.className} text-primary border-b-2 border-b-primary pr-3`}>Product</h2>
+            <p className={` ${cinzel.className} font-light text-primary`}>800zł</p>
           </div>
-          <p>
+          <p className=" font-light italic text-gray-100">
             This includes product photography, real estate photography, and
             corporate events.
           </p>

@@ -7,6 +7,7 @@ import { cinzel, cinzelDecorative } from "./fonts";
 import useEmblaCarousel from "embla-carousel-react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
+import { MdOutlinePhoto } from "react-icons/md";
 
 const Latest = () => {
   const [emblaRef] = useEmblaCarousel();
@@ -44,12 +45,13 @@ const Latest = () => {
 
       </div>
       </div>
-      <Link
-        href="/photoAlbum"
-        className="text-primary mt-10 text-2xl block w-full text-center"
-      >
-        See More <FaArrowRight className=" inline" />{" "}
-      </Link>
+      <div className={` ${cinzel.className}  w-full md:left-10`}>
+        <a
+          className="mx-auto mt-10 text-primary text-2xl block w-fit py-2 px-5 text-center border border-primary rounded-md"
+        >
+          Our Photo Album<MdOutlinePhoto  className="ml-2 inline-block" />
+        </a>
+        </div>
     </section>
   );
 };

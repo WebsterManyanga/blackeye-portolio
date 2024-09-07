@@ -8,6 +8,7 @@ import { Autoplay, EffectFade, Pagination } from "swiper/modules";
 import Image from "next/image";
 import Socials from "./Socials";
 import TopNav from "./TopNav";
+import { FaCameraRetro } from "react-icons/fa";
 
 const Header = ({ screenWidth }: propType) => {
   const mobilePictures = [31,103,45,62];
@@ -25,6 +26,13 @@ const Header = ({ screenWidth }: propType) => {
 
   return (
     <section className="relative">
+        <h1
+          className={` text-7xl md:text-7xl text-primary select-none absolute top-10 left-4 z-10 ${cinzel.className}`}
+        >
+          <span className={cinzelDecorative.className}>B</span>LACKEYE <br />{" "}
+          <span className={cinzelDecorative.className}>V</span>ISUALS
+        </h1>
+
       <TopNav />
       <Swiper
         grabCursor={true}
@@ -51,9 +59,9 @@ const Header = ({ screenWidth }: propType) => {
           </SwiperSlide>
         ))}
       </Swiper>
-      <div className="bottom-28 md:bottom-16 left-4 absolute z-10 md:left-10">
+      <div className="bottom-28  md:bottom-16 left-4 absolute z-10 md:left-10">
         <h1
-          className={` text-5xl md:text-7xl text-primary select-none   ${cinzel.className}`}
+          className={` text-5xl md:text-7xl text-primary select-none hidden  ${cinzel.className}`}
         >
           <span className={cinzelDecorative.className}>B</span>LACKEYE <br />{" "}
           <span className={cinzelDecorative.className}>V</span>ISUALS
@@ -64,8 +72,19 @@ const Header = ({ screenWidth }: propType) => {
           events and striking commercial campaigns, our lens brings your story
           to life
         </p>
+
       </div>
+      <div className={` ${cinzel.className}  w-full bottom-28  md:bottom-16 absolute z-10 md:left-10`}>
+        <h2 className="mx-auto text-lg block w-full text-center text-primary bg-black bg-opacity-80 py-1">~Professional Photographer~</h2>
+        <a
+          className="mx-auto mt-10 text-primary text-2xl block w-fit py-2 px-5 text-center border border-primary rounded-md"
+        >
+          Book Now <FaCameraRetro className="ml-2 inline-block" />
+        </a>
+      </div>
+
       <Socials />
+
     </section>
   );
 };
