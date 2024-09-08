@@ -9,6 +9,7 @@ import Image from "next/image";
 import Socials from "./Socials";
 import TopNav from "./TopNav";
 import { FaCameraRetro } from "react-icons/fa";
+import Book from "./Book";
 
 const Header = ({ screenWidth }: propType) => {
   const mobilePictures = [31,103,45,62];
@@ -82,7 +83,7 @@ const Header = ({ screenWidth }: propType) => {
           Book Now <FaCameraRetro className="ml-2 inline-block" />
         </a>
       </div>
-
+\
       <Socials />
 
     </section>
